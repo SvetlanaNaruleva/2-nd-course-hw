@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    height: 1024px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+}
+
+.header__top{
+    padding-top: 217.1px;
+}
+
+.header__title{
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__subtitle{
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.header__subtitle{
+    padding-top: 32px;
+    padding-bottom: 44px;
+}
+
+.text{
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.header__button{
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: transparent;
+}
+
+.footer{
+    height: 556px;
+    background: #000915;
+    position: relative;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 128px;
+}
+
+
+.footer__item{
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.item1{
+    width: 379px;
+    height: 300px;
+    background-image: url(game1.jpg);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+
+.item2{
+    width: 379px;
+    height: 300px;
+    background-image: url(game2.jpg);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+
+.item3{
+    width: 379px;
+    height: 300px;
+    background-image: url(game3.jpg);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+
+.game{
+    padding-bottom: 32px;
+    padding-left: 32px;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+
