@@ -1,16 +1,17 @@
 // Задание 1
 
-let a = 10;
+let a
+a = 10;
 a = 20;
 alert (a);
 
 // Задание 2
 
-let year = String(alert(`Год выпуска первого айфона 2007 год`));
+const year = String(alert(`Год выпуска первого айфона 2007 год`));
 
 // Задание 3
 
-let nameJs = (alert(`Имя создателя языка JavaScript: Brendan Eich`));
+const nameJs = (alert(`Имя создателя языка JavaScript: Brendan Eich`));
 
 // Задание 4
 
@@ -38,13 +39,14 @@ alert (e);
 // Задание 7
 
 let num = 1;
-num = num += 5;
-num = num -= 3;
-num = num *= 7;
-num = num /= 3;
-num = num + 1;
-num = num - 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+++num;
+--num;
 alert(num);
+
 
 // Задание 8
 
@@ -54,9 +56,13 @@ alert (age);
 // Задание 9.0
 
 const user = {
-    name:`Bob`,
-    age: Number ("14"),
-    isAdmin: Boolean = true,
+
+    name:"Bob",
+
+    age: 14,
+
+    isAdmin: true,
+
 };
 alert(user.name)
 alert(user.age)
