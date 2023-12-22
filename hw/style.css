@@ -1,127 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.header{
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    height: 1024px;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: cover;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-.header__top{
-    padding-top: 217.1px;
+.header {
+  height: 1024px;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.header__title{
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.header__top {
+  padding-top: 217.1px;
 }
 
-.header__subtitle{
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
+.header__title {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.header__subtitle{
-    padding-top: 32px;
-    padding-bottom: 44px;
+.header__subtitle {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
 }
 
-.text{
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+.header__subtitle {
+  padding-top: 32px;
+  padding-bottom: 44px;
 }
 
-.header__button{
-    width: 234.063px;
-    height: 48.603px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #9C0332;
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-color: transparent;
+.text {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
 }
 
-.footer{
-    height: 556px;
-    background: #000915;
-    position: relative;
+.header__button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  margin-left: 71px;
 }
 
-.footer__link{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-    padding-top: 128px;
+.games {
+  background: #000915;
+  position: relative;
+  background-image: url(Rectangle\ 5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-
-.footer__item{
-    display: flex;
-    flex-direction: column-reverse;
-    text-decoration: none;
-    border-color: transparent;
+.games__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 128px;
 }
 
-.item1{
-    width: 379px;
-    height: 300px;
-    background-image: url(game1.jpg);
-    border-radius: 20px;
-    background-repeat: no-repeat;
+.games__item {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  border-color: transparent;
 }
 
-.item2{
-    width: 379px;
-    height: 300px;
-    background-image: url(game2.jpg);
-    border-radius: 20px;
-    background-repeat: no-repeat;
+.item1 {
+  width: 379px;
+  height: 300px;
+  background-image: url(game1.jpg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.item1:hover {
+  border: 3px solid #44D2FF;
 }
 
-.item3{
-    width: 379px;
-    height: 300px;
-    background-image: url(game3.jpg);
-    border-radius: 20px;
-    background-repeat: no-repeat;
+.item2 {
+  width: 379px;
+  height: 300px;
+  background-image: url(game2.jpg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.item2:hover {
+  border: 3px solid #44D2FF;
 }
 
-.game{
-    padding-bottom: 32px;
-    padding-left: 32px;
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
+.item3 {
+  width: 379px;
+  height: 300px;
+  background-image: url(game3.jpg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.item3:hover {
+  border: 3px solid #44D2FF;
 }
 
+.game {
+  padding-bottom: 32px;
+  padding-left: 32px;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
 
+@media (max-width: 767px) {
+  .header__title {
+    font-size: 32px;
+    padding-left: 16px;
+    text-align: center;
+  }
+  .header__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+  .header__button {
+    margin-top: 33px;
+    margin-bottom: 239px;
+  }
+  .item1 {
+    width: 349px;
+    border-radius: 16px;
+  }
+  .item2 {
+    width: 349px;
+    border-radius: 16px;
+  }
+  .item3 {
+    width: 349px;
+    border-radius: 16px;
+  }
+  .gemes {
+    height: 100%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
