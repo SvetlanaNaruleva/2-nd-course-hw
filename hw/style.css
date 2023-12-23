@@ -58,18 +58,19 @@
   border-radius: 30px;
   background: #9C0332;
   color: #FFF;
+  border-color: transparent;
+}
+.header__button:hover {
+  cursor: url(cursor.svg), auto;
+}
+
+.button-text {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   border-color: transparent;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  display: inline-block;
-  margin-left: 71px;
 }
 
 .games {
@@ -106,6 +107,7 @@
 }
 .item1:hover {
   border: 3px solid #44D2FF;
+  cursor: url(cursor.svg), auto;
 }
 
 .item2 {
@@ -117,6 +119,7 @@
 }
 .item2:hover {
   border: 3px solid #44D2FF;
+  cursor: url(cursor.svg), auto;
 }
 
 .item3 {
@@ -128,6 +131,7 @@
 }
 .item3:hover {
   border: 3px solid #44D2FF;
+  cursor: url(cursor.svg), auto;
 }
 
 .game {
@@ -155,8 +159,11 @@
     text-align: center;
   }
   .header__button {
-    margin-top: 33px;
-    margin-bottom: 239px;
+    display: block;
+    margin: auto;
+  }
+  .games__link {
+    padding-top: 1px;
   }
   .item1 {
     width: 349px;

@@ -15,14 +15,12 @@
     }
 
     .header__button{
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //    justify-content: center;
-    //    align-items: center;
-    //    margin-left: 71px;
-    //    margin-right: 71px;
-         margin-top: 33px;
-         margin-bottom: 239px 
+        display: block;
+        margin: auto;
+    }
+
+    .games__link{
+        padding-top: 1px;
     }
 
     .item1{

@@ -57,19 +57,19 @@
     border-radius: 30px;
     background: #9C0332;
     color: #FFF;
+    border-color: transparent;
+    &:hover{
+        cursor: url(cursor.svg), auto;
+    }
+}
+
+.button-text{
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     border-color: transparent;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    display: inline-block;
-    margin-left: 71px;
-
 }
 
 
@@ -85,7 +85,7 @@
 //   }
 
 .games{
-    // height: 556px;
+    // height: 100%;
     background: #000915;
     position: relative;
     background-image: url(Rectangle\ 5.png);
@@ -119,6 +119,7 @@
     background-repeat: no-repeat;
     &:hover{
         border: 3px solid #44D2FF;
+        cursor: url(cursor.svg), auto;
     }
 }
 
@@ -130,6 +131,7 @@
     background-repeat: no-repeat;
     &:hover{
         border: 3px solid #44D2FF;
+        cursor: url(cursor.svg), auto;
     }
 }
 
@@ -141,6 +143,7 @@
     background-repeat: no-repeat;
     &:hover{
         border: 3px solid #44D2FF;
+        cursor: url(cursor.svg), auto;
     }
 }
 
