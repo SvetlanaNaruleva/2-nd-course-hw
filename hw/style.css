@@ -62,6 +62,7 @@
 }
 .header__button:hover {
   cursor: url(cursor.svg), auto;
+  background: #EB443F;
 }
 
 .button-text {
