@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+
+    .header__title{
+        font-size: 32px;
+        padding-left: 16px;
+        text-align: center;
+    }
+
+    .header__subtitle{
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+
+    .header__button{
+        display: block;
+        margin: auto;
+    }
+
+    .games__link{
+        padding-top: 1px;
+    }
+
+    .item1{
+        width: 349px;
+        border-radius: 16px;
+    }
+    
+    .item2{
+        width: 349px;
+        border-radius: 16px;
+    }
+    
+    .item3{
+        width: 349px;
+        border-radius: 16px;
+    }
+
+    .gemes{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
