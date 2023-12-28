@@ -2,6 +2,7 @@
 
 let a
 a = 10;
+alert (a)
 a = 20;
 alert (a);
 
@@ -43,8 +44,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-++num;
---num;
+num++;
+num--;
 alert(num);
 
 
@@ -69,7 +70,7 @@ alert(user.age)
 
 // Задание 9.1
 
-user["city of residence"] = `Krasnodar`;
+user["city of residence"] = "Krasnodar";
 alert(user["city of residence"]);
 
 // Задание 9.2
