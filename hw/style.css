@@ -3,7 +3,11 @@
   padding: 0;
 }
 
-.header {
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -22,7 +26,6 @@
 
 .header__title {
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -31,7 +34,6 @@
 
 .header__subtitle {
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -45,7 +47,6 @@
 
 .text {
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -66,7 +67,6 @@
 }
 
 .button-text {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -139,11 +139,77 @@
   padding-bottom: 32px;
   padding-left: 32px;
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+
+.game__img {
+  width: 485px;
+  height: 333px;
+}
+
+.game__info {
+  height: 800px;
+  background-image: url(gameFon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game__info {
+  padding-top: 410px;
+}
+
+.game__title {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 48px;
+}
+
+.game__subtitle {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.game__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game__start {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.game__start-new {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.game__words {
+  height: 800px;
+  background-image: url(gameFon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game__words {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 130px;
 }
 
 @media (max-width: 767px) {
@@ -181,5 +247,24 @@
   .gemes {
     height: 100%;
     width: 100%;
+  }
+  .game__title {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .game__subtitle {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+  .game__img {
+    width: 375px;
   }
 }/*# sourceMappingURL=style.css.map */
