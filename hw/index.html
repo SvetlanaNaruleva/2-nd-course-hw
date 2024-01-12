@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="header center">
@@ -17,12 +17,34 @@
         <button class="header__button"> <span class="button-text">Поехали</span></button>
         </div>
     </section>
-    <div class="games center">
-        <div class="games__link">
+    <div class="games">
+      <div class="games__link">
        <a class="games__item item1" href="#"><span class="game">Игра 1</span></a>
        <a class="games__item item2" href="#"><span class="game">Игра 2</span></a>
        <a class="games__item item3" href="#"><span class="game">Игра 3</span></a>
+      </div>
     </div>
+    <section class="game__info center">
+    <div class="game__start">
+        <h1 class="game__title">Времена года !</h1>
+        <h2 class="game__subtitle">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы <br>узнаете к какому времени года он относится</h2>
+        <button onclick="alert(monthNames())" class="header__button"> <span class="button-text">Играть</span></button>
+    </div>
+        <div>
+            <img class="game__img" src="undraw_video_game_night_8h8m 1.png" alt="Игра1">
+        </div>   
+    </section>
+    <section class="game__words center">
+        <div class="game__start-new">
+            <h1 class="game__title">Запомни слова</h1>
+            <h2 class="game__subtitle">При нажатии на кнопку играть, вы увидите несколько слов, <br>которые вам необходимо запомнить.</h2>
+            <button class="header__button"> <span class="button-text">Играть</span></button>
+        </div> 
+        <div>
+            <img class="game__img" src="undraw_gaming_re_cma2 1.png" alt="Игра2">
+            </div>  
+        </section>
 </div>
+<script src="style.js"></script>
 </body>
 </html>
