@@ -381,3 +381,106 @@ console.log(circle2.getPerimeter());
 // function checkAge(age) {
 //   return (age > 18) || confirm('Родители разрешили?');
 // }
+
+// Написать функцию, которая принимает два числа и возращает результат их умножения
+
+// function multipResult(a, b) {
+//   return a * b
+// }
+
+// multipResult(2, 8);
+
+// //Написать функцию, которой передаем, имя, фамилия и возраст, и получаем строку "Привет Иван Петров с возрастом 17 лет" (только здесь данные, которые были переданы в функцию)
+
+// function hello(name, surname, age) {
+//    return `Привет ${name} ${surname} с возрастом ${age} лет`
+// }
+
+// console.log(hello(`Иван`, `Петров`, 17));
+
+// // Напишите программу, которая берет исходное количество евро, записанное в константу eurosCount, переводит евро в доллары и выводит на экран. Затем полученное значение переводит в рубли и выводит на новой строчке.
+
+// Пример вывода для 100 евро:
+
+// 125
+// 7500
+// Считаем, что:
+
+// 1 евро = 1.25 долларов
+// 1 доллар = 60 рублей
+
+// const euroConst = 100;
+
+// const euro = euroConst * 1.25;
+// console.log(euro);
+
+// const dollar = euro * 60;
+// console.log(dollar);
+
+// function sayHello() {
+//   alert(`Привет,друзья!`);
+// }
+
+// sayHello();
+
+
+
+// function sayHello(name) {
+//   alert(`Привет ${name}`);
+// }
+// sayHello(`Григорий`);
+
+// function showMessage(massage = `Пустое сообщение`) {
+//   alert(massage);
+// }
+
+// showMessage();
+
+// function calc(a, b) {
+//   let sum = a + b;
+//   let mult = a * b;
+//   console.log(`Сумма чисел равна ${sum}, произведение равно ${mult}`);
+// }
+
+// calc(5, 2);
+// calc(10, 12);
+
+// let mystery = prompt(`Когда все видишь, то её не видишь. Когда ничего не видишь, то её видишь`);
+
+// if (mystery === `темнота`) {
+//   console.log(`Молодец, угадал!`);
+// } else {
+//   console.log(`Не правильно, подумай еще.`);
+// }
+
+// function riddle(question, answer) {
+//   let userAnswer = prompt(question);
+
+// if (userAnswer === answer) {
+//   console.log(`Молодец, угадал!`);
+// } else {
+//   console.log(`Не правильно, подумай еще.`);
+// }
+// }
+
+// riddle(`Сидит дед во сто шуб одет, кто его раздевает тот слезы проливает`, `лук`);
+
+// riddle(`Зимой и летом одним цветом`, `елка`);
+
+// function summa(c, k) {
+//   return c + k;
+// }
+
+// console.log(summa(8, 2));
+
+// const sayHi = function () {
+//   console.log(`Hi!`);
+// }
+// sayHi();
+
+// sayHello();
+
+// function sayHello() {
+//  console.log(`Hi!`); 
+// }
+
