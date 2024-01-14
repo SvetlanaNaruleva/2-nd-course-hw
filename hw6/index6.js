@@ -3,8 +3,8 @@
 const arr = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 10) break;
     console.log(arr[i]);
+    if (arr[i] === 10) break;
 }
 
 // Задание 2
@@ -19,16 +19,18 @@ const item = [1, 3, 5, 10, 20];
 
 console.log(item.join(' '));
 
-// Задание 4
+// Задание 4 исправить 
 
-const arrNew = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+const arrA = [];
+for (let i = 0; i < 3; i++) {
+    let innerArr = [];
+    for ( let j = 0; j <3; j++) {
+        innerArr.push(1);
+    }
+    arrA.push(innerArr);
+}
 
-console.log(arrNew[0] [0]);
-
+console.log(arrA);
 
 // Задание 5
 
@@ -72,18 +74,16 @@ line = line.join(``);
 console.log(line);
 
 
-// Задание 9
+// Задание 9  исправить
 
-const arrView = [
-    [1, 2, 3,],
-    [4, 5, 6],
-];
+const arr1 = [1, 2, 3,];
+const arr2 = [4, 5, 6];
 
-for (let arrIn of arrView) {
-    for (let element of arrIn) {
-        console.log(element);
-    }
-}
+const arr3 = arr1.concat(arr2);
+
+console.log(arr3);
+
+// [[1, 2, 3,],[4, 5, 6]].flat()
 
 // Задание 10
 
@@ -93,13 +93,19 @@ for (let i = 0; i < newsArr.length - 1; i++) {
     console.log(newsArr[i] + newsArr[i + 1]);
 }
 
-// задание 11
+// задание 11 исправить
 
-const wholeNumbers = [5, 2, 6];
+function getSquares(arr) {
+    return arr.map(num => num ** num);
+  }
 
-let result = wholeNumbers.map(item =>(item ** 2));
+getSquares([1, 2, 3, 4]);
 
-console.log(result);
+// const wholeNumbers = [5, 2, 6];
+
+// let result = wholeNumbers.map(item =>(item ** 2));
+
+// console.log(result);
 
 // Задание 12
 
@@ -136,6 +142,22 @@ console.log(filterPositive([-25, 25, 0, -1000]));
 //  в диапазоне от 0 до 10.
 
 // В данном массиве найдите все четные значения и добавьте их в новый массив. Результат работы программы необходимо вывести в консоль — это будет два массива: исходный массив и массив с четными значениями.
+
+// let values = [];
+// let evenValues = [];
+
+// for (let i = 0; i < 10; i++) {
+//     values.push(Math.floor(Math.random() *  10) + 1);
+// }
+
+// for (let i = 0; i < values.length; i++) {
+//     if (values[i] % 2 === 0) {
+//         evenValues.push(values[i]);
+//     }
+// }
+
+// console.log("Исходный массив:", values);
+// console.log("Массив с четными значениями:", evenValues);
 
 // Задание 15
 
