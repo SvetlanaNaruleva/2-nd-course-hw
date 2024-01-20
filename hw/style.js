@@ -15,3 +15,38 @@ function monthNames() {
     return "Введен не верный номер месяца";
   }
 }
+
+
+// Задание 11 _ Работа с макетом
+
+function gameStart() {
+  let arrStart = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+  arrStart = arrStart.sort(() => Math.random() - 0.5);
+
+  // arrStart.sort(function (a, b) {
+  //   return a.toLowerCase().startsWith(b.toLowerCase() - 1)
+  // });
+
+  alert(arrStart);
+
+  let question = prompt("Чему равнялся первый элемент массива?").toLowerCase();
+
+  let question2 = prompt("Чему равнялся последний элемент массива?").toLowerCase();
+
+  if (arrStart[0] === question && arrStart[-1] === question2) {
+
+    alert(`Молодец, все верно!`);
+
+  } else if (arrStart[0] === question || arrStart[-1] === question2) {
+
+    alert(`Вы были близки к победе!`);
+
+  } else {
+
+    alert(`не повезло`);
+
+  }
+} 
+
+

@@ -76,14 +76,14 @@ console.log(line);
 
 // Задание 9  исправить
 
-const arr1 = [1, 2, 3,];
-const arr2 = [4, 5, 6];
+// const arr1 = [1, 2, 3,];
+// const arr2 = [4, 5, 6];
 
-const arr3 = arr1.concat(arr2);
+// const arr3 = arr1.concat(arr2);
 
-console.log(arr3);
+// console.log(arr3);
 
-// [[1, 2, 3,],[4, 5, 6]].flat()
+[[1, 2, 3,],[4, 5, 6]].flat()
 
 // Задание 10
 
@@ -206,3 +206,182 @@ console.log(filterPositive([-25, 25, 0, -1000]));
 // let products = ['Кресло', 1, 'Стол', true];
 
 // console.log(products);
+
+"use strict";
+let age = prompt("Сколько Вам лет?", 18);
+
+let printMessage;
+
+// в зависимости от условия объявляем функцию
+if (age < 18) {
+
+    printMessage = function () {
+        console.log("Привет!");
+    }
+
+} else {
+
+    printMessage = function () {
+        console.log("Здравствуйте!");
+    }
+
+}
+
+printMessage();
+
+
+let name = `Ира`;
+
+function showmessage() {
+    let messang = `Привет ${name}`
+
+    console.log(messang);
+}
+
+showmessage();
+
+// Пример стрелочной функции nfn
+const multA = (a, b) => a * b;
+
+console.log(multA(2, 3));
+
+const puzzle = (a, b) => {
+    if (a > b) {
+        return a + b;
+    } else {
+        return a * b;
+    }
+}
+
+console.log(puzzle(4, 2));
+
+const dog = {
+	name: 'Шарик',
+	breed: 'корги',
+	weight: 6,
+	age: 2,
+    bark: function() {
+		console.log(`${dog.name} лает: Гав!`);
+	}
+}
+
+dog.bark();
+
+const cat = {
+	name: 'Барсик',
+	breed: 'перс',
+	weight: 3,
+	age: 4,
+    bark: function() {
+		console.log(`${cat.name} мяукает: Мяу!`);
+	}
+}
+cat.bark();
+
+const user = {
+	name: 'Марина',
+	age: 15,
+	city: 'Балашиха',
+
+	getInfo() {
+		return `Пользователь ${user.name}, возраст ${user.age}, проживает в ${user.city}`;	
+	}
+};
+
+console.log(user.getInfo());
+
+// const dog1 = {
+// 	name: 'Шарик',
+// 	breed: 'корги',
+// 	weight: 6,
+// 	age: 2,
+// 	bark() {
+// 		console.log(`${this.name} лает: Гав!`);
+// 	}
+// }
+
+// const dog2 = {
+// 	name: 'Бобик',
+// 	breed: 'шпиц',
+// 	weight: 3,
+// 	age: 4,
+// 	bark() {
+// 		console.log(`${this.name} лает: Гав!`);
+// 	}
+// }
+
+// dog1.bark(); // Шарик лает: Гав!
+// dog2.bark(); // Бобик лает: Гав!
+
+// без дублирования кода
+
+function bark() {
+	console.log(`${this.name} лает: Гав!`);
+};
+
+const dog1 = {
+	name: 'Шарик',
+	breed: 'корги',
+	weight: 6,
+	age: 2,
+	bark: bark,
+}
+
+const dog2 = {
+	name: 'Бобик',
+	breed: 'шпиц',
+	weight: 3,
+	age: 4,
+	bark: bark,
+}
+
+dog1.bark(); // Шарик лает: Гав!
+dog2.bark(); // Бобик лает: Гав!
+
+// Практика после изучения this. Краткий экскурс
+
+const square1 = {
+    width: 2,
+    height: 4,
+
+    getRectangleArea() {
+        return this.width * this.height
+    },
+
+    getRectanglePerimeter() {
+        return 2 * (this.width + this.height)
+    }
+};
+
+console.log(square1.getRectangleArea());
+console.log(square1.getRectanglePerimeter());
+
+const square2 = {
+    width: 3,
+    height: 8,
+
+    getRectangleArea() {
+        return this.width * this.height
+    },
+
+    getRectanglePerimeter() {
+        return 2 * (this.width + this.height)
+    }
+};
+
+console.log(square2.getRectangleArea());
+console.log(square2.getRectanglePerimeter());
+
+
+let num1 = prompt(`Введите первое число`);
+
+let num2 = prompt(`Введите второе число`);
+
+function Numbers(num1, num2) {
+
+    return num1 < num2 ? num1 : num2;
+
+  }
+  
+  console.log(Numbers(num1, num2)); 
+
