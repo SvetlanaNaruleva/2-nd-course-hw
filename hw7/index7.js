@@ -58,25 +58,32 @@ console.log(Math.min(...numbers));
 
 console.log(Math.max(...numbers));
 
-// Задание 5
+// Задание 5 исправить 
 
-function getRandom(max) {
-    return Math.floor(Math.random() * max);
-  }
+// function getRandom(max) {
+//     return Math.floor(Math.random() * max);
+//   }
   
-  console.log(getRandom(10));
+//   console.log(getRandom(10));
 
-  // Задание 6
+function getRandom(min, max) {
+  let random = min + Math.random() * (max + 1 - min);
+  return Math.floor(random);
+}
+console.log(getRandom(1, 10));
+
+  // Задание 6 исправить 
 
 function getRandomArrNumbers(value) {
     const getRandom = [];
-    for (let i = 0; i < getRandomArrNumbers.length; i++) {
+    for (let i = 0; i < value; i++) {
         getRandom[i] = Math.floor(Math.random() * value / 2);
     }
     return getRandom;       
     }
 
-    console.log(getRandomArrNumbers(9));
+    console.log(getRandomArrNumbers(7));
+    console.log(getRandomArrNumbers(12));
 
   // Задание 7
 
