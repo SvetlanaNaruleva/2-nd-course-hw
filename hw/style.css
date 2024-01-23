@@ -265,6 +265,9 @@ body {
     text-align: center;
   }
   .game__img {
-    width: 375px;
+    width: 344px;
+    height: 231px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
