@@ -30,9 +30,9 @@ function fruitsGame() {
 
   let question2 = prompt("Чему равнялся последний элемент массива?").toLowerCase();
 
-  if (fruits[0] === question && fruits[fruits.length - 1] === question2) {
+  if (fruits[0].toLowerCase() === question && fruits[fruits.length - 1].toLowerCase() === question2) {
     alert("Молодец, все верно!");
-  } else if (fruits[0] !== question || fruits[fruits.length - 1] !== question2) {
+  } else if (fruits[0].toLowerCase() === question || fruits[fruits.length - 1].toLowerCase() === question2) {
     alert("Вы были блики к победе!");
   } else {
     alert("Не повезло");

@@ -76,8 +76,8 @@ console.log(getRandom(1, 10));
 
 function getRandomArrNumbers(value) {
     const getRandom = [];
-    for (let i = 0; i < value; i++) {
-        getRandom[i] = Math.floor(Math.random() * value / 2);
+    for (let i = 0; i < value / 2; i++) {
+        getRandom[i] = Math.floor(Math.random() * value);
     }
     return getRandom;       
     }
