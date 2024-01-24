@@ -125,13 +125,8 @@ function isPositive(a) {
   return a > 0;
 }
 
-function isMale(name, gender) { 
-
-    if (gender === 'male') {
-    
-     return name + gender; 
-    
-    } 
+function isMale(person) { 
+   return person.gender === 'male'
 }
 
 function filter(array, ruleFunction) {
